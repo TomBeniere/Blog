@@ -33,4 +33,24 @@ function run() {
         require CONTROLLER . 'ArticleController.php';
         articleEdit($match[1]);
     } 
+    elseif ($_SERVER['REQUEST_URI'] == '/login' && $_SERVER["REQUEST_METHOD"] == "POST") {
+        require CONTROLLER . 'AuthController.php';
+        login();
+    }
+    elseif ($_SERVER['REQUEST_URI'] == '/register' && $_SERVER["REQUEST_METHOD"] == "POST") {
+        require CONTROLLER . 'AuthController.php';
+        register();
+    }
+    elseif ($_SERVER['REQUEST_URI'] == '/logout' && $_SERVER["REQUEST_METHOD"] == "POST") {
+        require CONTROLLER . 'AuthController.php';
+        logout();
+    }
+    elseif ($_SERVER['REQUEST_URI'] == '/register') {
+        require CONTROLLER . 'AuthController.php';
+        showRegister();
+    } 
+    elseif ($_SERVER['REQUEST_URI'] == '/login') {
+        require CONTROLLER . 'AuthController.php';
+        showLogin();
+    }
 } 

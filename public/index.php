@@ -19,5 +19,6 @@ define('PASSWORD', 'root');
             die('Erreur : '.$e->getMessage());
     }
 
-Require_once SRC . 'Router.php';
+require_once SRC . 'Router.php';
+require SRC . 'Helper.php';
     run();

@@ -1,3 +1,8 @@
+<?php 
+    if (!isset($_SESSION['id'])) {
+        header('Location: /login');
+    }     
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +16,10 @@
 <body>
     <header>
         <h1>Article Index Page</h1>
+        <p> Connect on : <span style="color:red"><?php echo isset($_SESSION['username']) ? $_SESSION['username'] : "";?></span></p>
+        <form action="/logout" method="post">
+            <button type="submit" style="padding:0.5rem;background-color:red;">Logout</button>
+        </form>
     </header>
     <main>
         <?php

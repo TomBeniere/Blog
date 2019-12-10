@@ -1,0 +1,96 @@
+body {
+    background-image: url("../Img/et2.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 96vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-header > a > img {
+    height: 150px;
+}
+
+.right-header {
+    display: flex;
+}
+
+.div-nav {
+    margin-right: 20px;
+}
+
+.div-nav > nav > ul li a {
+    color: #fff;
+}
+
+nav > ul li {
+    list-style-type: none;
+}
+
+.div-form-logout {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-form-logout > form > button {
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.bloc-article {
+    display: flex;
+    background-color: rgba(5, 1, 1, 0.7);
+    width: 48%;
+    margin: 10px;
+}
+
+.bloc-article p  {
+    padding: 10px;
+}
+
+.bloc-article h2  {
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.edit {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.delete {
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.bloc-article-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

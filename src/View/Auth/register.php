@@ -18,7 +18,6 @@
 <body>
     <main>
         <form action="/login" method="post">
-        <span style="color:red"><?php echo errors("identifiantErr");?></span>
             <label for="username">Username </label>
             <input type="text" name="username" autocomplete="off">
             <span style="color:red"><?php echo errors("usernameErr");?></span>

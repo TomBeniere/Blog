@@ -20,6 +20,7 @@ function articleShow($slug) {
 }
 
 function articleEdit($slug) {
+    $_SESSION['previous'] = $_SERVER['HTTP_REFERER'];
     require MODEL . 'ArticleModel.php';
     $article = getArticle($slug);
     if ($article) {
@@ -40,7 +41,7 @@ function articleUpdate($slug) {
         } if (!isset($_SESSION['errors'])) {
             require MODEL . 'ArticleModel.php';
             UpdateArticle($slug);
-            header('Location: /articles/' . $_POST['slug']);
+            header('Location: '. $_SESSION['previous']);
             exit();
         } else {
             header('Location: /articles/' . $slug . '/edit');

@@ -20,6 +20,12 @@
         <form action="/logout" method="post">
             <button type="submit" style="padding:0.5rem;background-color:red;">Logout</button>
         </form>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/articles">Articles</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <?php

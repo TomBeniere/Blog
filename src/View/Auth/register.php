@@ -17,7 +17,7 @@
 
 <body>
     <main>
-        <form action="/login" method="post">
+        <form action="/register" method="post">
             <label for="username">Username </label>
             <input type="text" name="username" autocomplete="off">
             <span style="color:red"><?php echo errors("usernameErr");?></span>

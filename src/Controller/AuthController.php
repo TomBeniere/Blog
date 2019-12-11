@@ -38,6 +38,9 @@ function register() {
         if (empty($_POST['password'])) {
             $_SESSION['errors']['passwordErr'] = "Password is required";
         }
+        if ($user = $_POST['username']) {
+            $_SESSION['errors']['existErr'] = "Username is already taken";
+        }
         if (!isset($_SESSION['errors'])) {
             # code...
             require MODEL . 'UserModel.php';

@@ -18,6 +18,7 @@
 <body>
     <main>
         <form action="/register" method="post">
+        <span style="color:red"><?php echo errors("existErr");?></span>
             <label for="username">Username </label>
             <input type="text" name="username" autocomplete="off">
             <span style="color:red"><?php echo errors("usernameErr");?></span>

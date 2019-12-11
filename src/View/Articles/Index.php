@@ -51,6 +51,7 @@
                 <p>created : <?php echo $article["created_at"];?></p>
             </div>
             <div class="bloc-article-action">
+            <a class="show" href="/articles/<?php echo $article['slug']?>"><i class="fas fa-eye"></i></a>
                 <a class="edit" href="/articles/<?php echo $article['slug'];?>/edit"><i class="fas fa-edit"></i></a>
                 <form action="/articles/<?php echo $article['slug'];?>/delete" method="post">
                     <button class="delete" type="submit"><i class="far fa-trash-alt"></i></button>

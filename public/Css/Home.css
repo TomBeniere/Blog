@@ -75,6 +75,11 @@ main {
     flex-wrap: wrap;
 }
 
+.show {
+    font-size: 30px;
+    padding: 10px;
+}
+
 .edit {
     font-size: 30px;
     padding: 10px;

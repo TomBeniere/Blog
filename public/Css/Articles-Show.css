@@ -1,5 +1,5 @@
 body {
-    background-image: url("../Img/et3.jpg");
+    background-image: url("../Img/et4.jpg");
     background-position: center;
     background-size: 100%;
     background-attachment: fixed;
@@ -59,7 +59,7 @@ nav > ul li {
 .bloc-article {
     display: flex;
     background-color: rgba(5, 1, 1, 0.7);
-    width: 48%;
+    width: 58%;
     margin: 10px;
 }
 
@@ -73,7 +73,13 @@ nav > ul li {
 
 main {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+.show {
+    font-size: 30px;
+    padding: 10px;
 }
 
 .edit {
@@ -94,10 +100,4 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
-
-
-.show {
-    font-size: 30px;
-    padding: 10px;
 }

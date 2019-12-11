@@ -3,7 +3,7 @@
 function getlastArticles() {
     global $bdd;
     // requete sql
-    $req = $bdd->query('SELECT * FROM article ORDER BY created_at DESC LIMIT 5');
+    $req = $bdd->query('SELECT * FROM article ORDER BY created_at DESC LIMIT 4');
     $articles = $req->fetchAll();
 
     return $articles;

@@ -32,11 +32,13 @@ main form > input {
     border-left: none;
     border-right: none;
     color: #fff;
+    font-weight: bold;
 }
 
 main form > label {
     margin-top: 20px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 form > button {

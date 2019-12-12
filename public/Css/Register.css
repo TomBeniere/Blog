@@ -13,8 +13,7 @@ body {
 }
 
 main form {
-    background-color: black;
-    opacity: 0.7;
+    background-color: rgba(5, 1, 1, 0.7);
     padding: 8rem;
     display: flex; 
     flex-direction: column;
@@ -33,11 +32,13 @@ main form > input {
     border-left: none;
     border-right: none;
     color: #fff;
+    font-weight: bold;
 }
 
 main form > label {
     margin-top: 20px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 form > button {
